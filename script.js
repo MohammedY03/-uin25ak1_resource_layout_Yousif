@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", function () {
     
     function displayResources(category) {
         resourcesContainer.innerHTML = ""; 
-
+        
         const filteredResources = resources
             .filter(resource => resource.category === category)
             .map(resource => {
@@ -25,7 +25,7 @@ document.addEventListener("DOMContentLoaded", function () {
         resourcesContainer.innerHTML = filteredResources;
     }
 
-    
+
     displayResources("HTML");
 
     
